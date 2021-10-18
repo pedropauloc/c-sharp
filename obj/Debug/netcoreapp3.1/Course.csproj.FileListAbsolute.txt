@@ -1,0 +1,13 @@
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/bin/Debug/netcoreapp3.1/Course.deps.json
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/bin/Debug/netcoreapp3.1/Course.runtimeconfig.json
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/bin/Debug/netcoreapp3.1/Course.runtimeconfig.dev.json
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/bin/Debug/netcoreapp3.1/Course.dll
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/bin/Debug/netcoreapp3.1/Course.pdb
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/obj/Debug/netcoreapp3.1/Course.csproj.AssemblyReference.cache
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/obj/Debug/netcoreapp3.1/Course.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/obj/Debug/netcoreapp3.1/Course.AssemblyInfoInputs.cache
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/obj/Debug/netcoreapp3.1/Course.AssemblyInfo.cs
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/obj/Debug/netcoreapp3.1/Course.csproj.CoreCompileInputs.cache
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/obj/Debug/netcoreapp3.1/Course.dll
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/obj/Debug/netcoreapp3.1/Course.pdb
+/Users/pedrocarvalho/Documents/DevTools/C#/Course/obj/Debug/netcoreapp3.1/Course.genruntimeconfig.cache
