@@ -1,0 +1,39 @@
+﻿using System;
+using System.Globalization;
+
+namespace Course
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // le ate a quebra de linha
+            //string frase = Console.ReadLine();
+
+            /*
+            // le uma palavra em cada linha
+            string x = Console.ReadLine();
+            string y = Console.ReadLine();
+            string z = Console.ReadLine();
+
+            Console.WriteLine("Voce digitou: ");
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z);
+            */
+
+            // le mais de uma palavra por linha
+            //string s = Console.ReadLine();
+
+            string[] v = Console.ReadLine().Split(' ');
+            string a = v[0];
+            string b = v[1];
+            string c = v[2];
+
+            Console.WriteLine($"{a} {b} {c}");
+
+
+        }
+    }
+}

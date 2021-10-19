@@ -8,28 +8,30 @@ namespace Course
         static void Main(string[] args)
         {
 
-            string produto1 = "Computador";
-            string produto2 = "Mesa de Escritorio";
+            Console.WriteLine("Entre com seu nome completo: ");
+            string nome = Console.ReadLine();
 
-            byte idade = 30;
-            int codigo = 5290;
-            char genero = 'M';
+            Console.WriteLine("Quantos quartos tem na sua casa? ");
+            int qtdQuartos = int.Parse(Console.ReadLine());
 
-            double preco1 = 2100.0;
-            double preco2 = 650.50;
-            double medida = 53.234567;
+            Console.WriteLine("Entre com o preço de um produto: ");
+            double precoProduto = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Produtos: ");
-            Console.WriteLine($"{produto1} cujo preco é ${preco1:f2}");
-            Console.WriteLine($"{produto2} cujo preco é ${preco2:f2}");
+            Console.WriteLine("Entre com seu ultimo nome, idade e altura ");
+            string[] vet = Console.ReadLine().Split(' ');
+            string vetUltimoNome = vet[0];
+            int vetIdade = int.Parse(vet[1]);
+            float vetAltura = float.Parse(vet[2]); 
 
-            Console.WriteLine("");
-            Console.WriteLine($"Registro: {idade} anos de idade, código {codigo} e gênero {genero}");
 
-            Console.WriteLine("");
-            Console.WriteLine($"Medida com oito casas decimais: {medida:f2}");
-            Console.WriteLine("Arredondado (três casas decimais): {0}", medida.ToString("F3"));
-            Console.WriteLine("Separador decimal invariant culture: " + medida.ToString("F2", CultureInfo.InvariantCulture));
+
+            Console.WriteLine(nome);
+            Console.WriteLine(qtdQuartos);
+            Console.WriteLine(precoProduto.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine(vetUltimoNome);
+            Console.WriteLine(vetIdade);
+            Console.WriteLine(vetAltura);
+
 
         }
     }

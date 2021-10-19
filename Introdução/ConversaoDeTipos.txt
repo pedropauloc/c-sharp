@@ -1,0 +1,39 @@
+﻿using System;
+using System.Globalization;
+
+namespace Course
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // conversao implicita e um cabe no outro porque o float armazena 4 bits e o double 8
+            /*
+            float x = 4.5f;
+            double y = x;
+            */
+
+            //casting - conversao explicita
+            /*
+            double a;
+            float b;
+
+            a = 5.1;
+            b = (float)a; // ele forca a conversao
+
+            Console.WriteLine(b);
+            */
+
+            int a = 5;
+            int b = 2;
+
+            // double resultado = a / b; ele vai enteder que eu quero um resultado inteito,
+            // por isso é necessario realizar o casting
+            double resultado = (double)a / b;
+            Console.WriteLine(resultado);
+
+
+        }
+    }
+}
