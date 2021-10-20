@@ -1,0 +1,37 @@
+﻿using System;
+using System.Globalization;
+
+namespace Course
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Estrutura sequencial
+            // Exercicio 4
+
+            /*
+             * Fazer um programa que leia o número de um funcionário, seu número de horas trabalhadas, 
+             * o valor que recebe por hora e calcula o salário desse funcionário. 
+             * A seguir, mostre o número e o salário do funcionário, com duas casas decimais.
+            */
+
+            Console.WriteLine("Digite o seu ID: ");
+            int id = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a quantidade de horas trabalhadas: ");
+            int horasTrabalhadas = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o seu ID: ");
+            double valorHora = double.Parse(Console.ReadLine());
+
+            double salario = valorHora * horasTrabalhadas;
+
+            Console.WriteLine($"Number: {id}");
+            Console.WriteLine("Salary = U$ {0}",salario.ToString("F2"));
+
+
+
+
+        }
+    }
+}

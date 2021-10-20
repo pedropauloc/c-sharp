@@ -1,0 +1,32 @@
+﻿using System;
+using System.Globalization;
+
+namespace Course
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Estrutura sequencial
+            // Exercicio 1
+
+            /*
+             * Faça um programa para ler dois valores inteiros, e depois mostrar na tela 
+             * a soma desses números com uma mensagem explicativa, conforme exemplos.
+            */
+
+            Console.WriteLine("Digite o primeiro valor: ");
+            int n1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o segundo valor: ");
+            int n2 = int.Parse(Console.ReadLine());
+
+            int soma = n1 + n2;
+
+            Console.WriteLine($"Soma: {soma}");
+
+
+        }
+    }
+}

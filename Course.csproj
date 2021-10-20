@@ -7,8 +7,12 @@
 
   <ItemGroup>
     <None Remove="Introdução\" />
+    <None Remove="Exercicios\" />
+    <None Remove="Exercicios\EstruturaSequencial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Introdução\" />
+    <Folder Include="Exercicios\" />
+    <Folder Include="Exercicios\EstruturaSequencial\" />
   </ItemGroup>
 </Project>
