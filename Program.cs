@@ -8,49 +8,17 @@ namespace Course
         static void Main(string[] args)
         {
 
-            // Estrutura sequencial
-            // Exercicio 6
+            bool c1 = 2 > 3 || 4 != 5; // TRUE
+            bool c2 = !(2 > 3) && 4 != 5; // TRUE
 
-            /*
-             * Fazer um programa que leia três valores com ponto flutuante de dupla precisão: 
-             * A, B e C. Em seguida, calcule e mostre:
-             * 
-             * a) a área do triângulo retângulo que tem A por base e C por altura.
-             * b) a área do círculo de raio C. (pi = 3.14159)
-             * c) a área do trapézio que tem A e B por bases e C por altura.
-             * d) a área do quadrado que tem lado B.
-             * e) a área do retângulo que tem lados A e B.
-             * 
-            */
+            Console.WriteLine(c1);
+            Console.WriteLine(c2);
 
-            Console.WriteLine("Digite os valores de A, B e C: ");
-            string[] values = Console.ReadLine().Split(' ');
-            double a = double.Parse(values[0]);
-            double b = double.Parse(values[1]);
-            double c = double.Parse(values[2]);
+            bool c3 = 10 < 5; // false
+            bool c4 = c1 || c2 && c3; // true
 
-            // a) a  área do triângulo retângulo que tem A por base e C por altura.
-            double areaTriangulo = (a * c) / 2;
-
-            // b) a área do círculo de raio C. (pi = 3.14159)
-            double areaCirculo = Math.PI * c * c;
-
-            // c) a área do trapézio que tem A e B por bases e C por altura.
-            double areaTrapezio = ((a + b) * c) / 2;
-
-            // d) a área do quadrado que tem lado B.
-            double areaQuadrado = b * b;
-
-            // e) a área do retângulo que tem lados A e B.
-            double areaRetangulo = a * b;
-
-            Console.WriteLine("Triangulo: {0}", areaTriangulo.ToString("F3"));
-            Console.WriteLine("Circulo: {0}", areaCirculo.ToString("F3"));
-            Console.WriteLine("Trapezio: {0}", areaTrapezio.ToString("F3"));
-            Console.WriteLine("Quadrado: {0}", areaQuadrado.ToString("F3"));
-            Console.WriteLine("Retangulo: {0}", areaRetangulo.ToString("F3"));
-
-
+            Console.WriteLine(c3);
+            Console.WriteLine(c4);
 
         }
     }
