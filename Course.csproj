@@ -9,10 +9,12 @@
     <None Remove="Introdução\" />
     <None Remove="Exercicios\" />
     <None Remove="Exercicios\EstruturaSequencial\" />
+    <None Remove="Exercicios\EstruturaCondicional\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Introdução\" />
     <Folder Include="Exercicios\" />
     <Folder Include="Exercicios\EstruturaSequencial\" />
+    <Folder Include="Exercicios\EstruturaCondicional\" />
   </ItemGroup>
 </Project>

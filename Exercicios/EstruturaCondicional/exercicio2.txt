@@ -1,0 +1,32 @@
+﻿using System;
+using System.Globalization;
+
+namespace Course
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Estrutura condicional
+            // Exercicio 2
+
+            /*
+             * Fazer um programa para ler um número inteiro e dizer se este número é par ou ímpar.
+            */
+
+            Console.WriteLine("Digite um valor: ");
+            int n = int.Parse(Console.ReadLine());
+
+            if(n % 2 == 0)
+            {
+                Console.WriteLine("Valor Par");
+            } else
+            {
+                Console.WriteLine("Valor Impar");
+            }
+
+
+        }
+    }
+}

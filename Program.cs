@@ -7,38 +7,32 @@ namespace Course
     {
         static void Main(string[] args)
         {
-            int x = 10;
 
-            // Simples
-            if (x < 11)
-            {
-                Console.WriteLine("Estrutura simples");
-            }
+            // Estrutura condicional
 
-            // Composta
-            if (x < 9)
+            /*
+             * Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, s
+             * abendo que o mesmo pode começar em um dia e terminar em outro, 
+             * tendo uma duração mínima de 1 hora e máxima de 24 horas.
+            */
+
+            Console.WriteLine("Digite a hora inicial e final ");
+            string[] hora = Console.ReadLine().Split(' ');
+
+            int horaInicio = int.Parse(hora[0]);
+            int horaFim = int.Parse(hora[1]);
+            int duracao;
+
+            if(horaInicio < horaFim)
             {
-                Console.WriteLine("Saida 1");
+                duracao = horaFim - horaInicio;
             } else
             {
-                Console.WriteLine("Saida 2");
+                duracao = 24 - horaInicio + horaFim;
             }
 
-            // Encadeada
-            if (x == 9)
-            {
-                Console.WriteLine("Saida 1");
-            }
-            else if (x > 9)
-            {
-                Console.WriteLine("Saida 2");
-            } else if (x != 10)
-            {
-                Console.WriteLine("Saida 3");
-            } else
-            {
-                Console.WriteLine("Saida 4");
-            }
+            Console.WriteLine($"O jogo durou {duracao} Horas.");
+
 
         }
     }

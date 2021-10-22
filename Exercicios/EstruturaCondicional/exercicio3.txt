@@ -1,0 +1,47 @@
+﻿using System;
+using System.Globalization;
+
+namespace Course
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Estrutura condicional
+            // Exercicio 3
+
+            /*
+             * Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem 
+             * "Sao Multiplos" ou "Nao sao Multiplos", indicando se os valores lidos são múltiplos entre si. 
+             * Atenção: os números devem poder ser digitados em ordem crescente ou decrescente.
+            */
+
+            Console.WriteLine("Digite os valores ");
+            string[] valor = Console.ReadLine().Split(' ');
+            int a = int.Parse(valor[0]);
+            int b = int.Parse(valor[1]);
+            int maiorValor = 0, menorValor = 0;
+
+            if (a > b)
+            {
+                maiorValor = a;
+                menorValor = b;
+            } else
+            {
+                maiorValor = b;
+                menorValor = a;
+            }
+
+            if (maiorValor % menorValor == 0)
+            {
+                Console.WriteLine("Sao multiplos");
+            } else
+            {
+                Console.WriteLine("Nao sao multiplos");
+            }
+
+
+        }
+    }
+}
