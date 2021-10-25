@@ -8,15 +8,7 @@ namespace Course
         static void Main(string[] args)
         {
 
-            // debuggiging
-            // f5 rodar em modo debugging
-            // f10 executar o proximo passo
-            // f11 executa o passo mas entra na função
-            // f9 marcar breakpoint
-            // shift + f11 sai do metodo em execucao
-            // shift + f5 para o debug
-
-
+            // função
             Console.WriteLine("Digite 3 numeros: ");
             int n1 = int.Parse(Console.ReadLine());
             int n2 = int.Parse(Console.ReadLine());
