@@ -8,40 +8,45 @@ namespace Course
         static void Main(string[] args)
         {
 
-            // debuggiging
-            // f5 rodar em modo debugging
-            // f10 executar o proximo passo
-            // f11 executa o passo mas entra na função
-            // f9 marcar breakpoint
-            // shift + f11 sai do metodo em execucao
-            // shift + f5 para o debug
+            // Estrutura condicional
+            // Exercicio 5
 
+            /*
+             * Com base na tabela abaixo, 
+             * escreva um programa que leia o código de um item e a quantidade deste item. 
+             * A seguir, calcule e mostre o valor da conta a pagar.
+            */
 
-            Console.WriteLine("Digite 3 numeros: ");
-            int n1 = int.Parse(Console.ReadLine());
-            int n2 = int.Parse(Console.ReadLine());
-            int n3 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o codigo e a quantidade: ");
+            string[] info = Console.ReadLine().Split(' ');
 
-            double resultado = Maior(n1, n2, n3);
+            int cod = int.Parse(info[0]);
+            double qtd = int.Parse(info[1]);
+            double total = 0;
 
-            Console.WriteLine("Maior = " + resultado);
-
-        }
-
-        static int Maior(int a, int b, int c)
-        {
-            int m;
-            if (a > b && a > c)
+            if (cod == 1)
             {
-                m = a;
-            } else if (b > c)
+                total = qtd * 4.00;
+            } else if (cod == 2)
             {
-                m = b;
+                total = qtd * 4.50;
+            } else if (cod == 3)
+            {
+                total = qtd * 5.00;
+            } else if (cod == 4)
+            {
+                total = qtd * 2.00;
+            } else if (cod == 5)
+            {
+                total = qtd * 1.50;
             } else
             {
-                m = c;
+                Console.WriteLine("valor digitado invalido!!");
             }
-            return m;
+
+            Console.WriteLine("Total: R$ " + total.ToString("F2"));
+
+
         }
     }
 }
