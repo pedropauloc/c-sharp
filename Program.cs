@@ -8,46 +8,48 @@ namespace Course
         static void Main(string[] args)
         {
 
-            // Estrutura condicional
+            // Estrutura While
             /*
-             * Exercicio 8
+             * Exercicio 2
+             * Escreva um programa para ler as coordenadas (X,Y) de uma quantidade indeterminada de 
+             * pontos no sistema cartesiano. Para cada ponto escrever o quadrante a que ele pertence. 
+             * O algoritmo será encerrado quando pelo menos uma de duas coordenadas 
+             * for NULA (nesta situação sem escrever mensagem alguma).
+
              */
 
-            Console.Write("Digite o salario: ");
-            double salario = double.Parse(Console.ReadLine());
-            double total;
+            Console.Write("Digite as coordenadas de X e Y: ");
+            string[] coordenadas = Console.ReadLine().Split(' ');
 
-            if (salario >= 0.0 && salario <= 2000)
-            {
-                Console.WriteLine("Insento");
-            }
-            else if (salario > 2000 && salario <= 3000)
-            {
-                // 8%
+            int x = int.Parse(coordenadas[0]);
+            int y = int.Parse(coordenadas[1]);
 
-                total = (salario - 2000.0) * 0.08;
-                
+            while (x != 0 && y != 0)
+            {
+                if (y > 0 && x > 0)
+                {
+                    Console.WriteLine("primeiro");
+
+                }
+                else if (y > 0 && x < 0)
+                {
+                    Console.WriteLine("segundo");
+                }
+                else if (y < 0 && x < 0)
+                {
+                    Console.WriteLine("terceiro");
+                }
+                else if (y < 0 && x > 0)
+                {
+                    Console.WriteLine("quarto");
+                }
+                Console.Write("Digite as coordenadas de X e Y: ");
+                coordenadas = Console.ReadLine().Split(' ');
+
+                x = int.Parse(coordenadas[0]);
+                y = int.Parse(coordenadas[1]);
 
             }
-            else if (salario > 3000 && salario <= 4500)
-            {
-                // 18%
-                total = (salario - 2000) * (18 / 100);
-                Console.WriteLine("R$ " + total);
-            }
-            else if (salario > 4500)
-            {
-                // 28%
-                total = (salario - 2000) * (28 / 100);
-                Console.WriteLine("R$ " + total);
-            }
-            else
-            {
-                Console.WriteLine("Valor digitado invalido");
-            }
-
-            Console.WriteLine(total);
         }
-  
     }
 }

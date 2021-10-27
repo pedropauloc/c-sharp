@@ -8,31 +8,30 @@ namespace Course
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Entre com seu nome completo: ");
-            string nome = Console.ReadLine();
+            // Estrutura While
+            /*
+             * Exercicio 1
+             * Escreva um programa que repita a leitura de uma senha até que ela seja válida. 
+             * Para cada leitura de senha incorreta informada, escrever a mensagem 
+             * "Senha Invalida". Quando a senha for informada corretamente deve ser impressa 
+             * a mensagem "Acesso Permitido" e o algoritmo encerrado. Considere que a senha correta é o valor 2002.
+             */
 
-            Console.WriteLine("Quantos quartos tem na sua casa? ");
-            int qtdQuartos = int.Parse(Console.ReadLine());
+            int password = 2002;
 
-            Console.WriteLine("Entre com o preço de um produto: ");
-            double precoProduto = double.Parse(Console.ReadLine());
+            Console.Write("Digite a senha: ");
+            int passwordDigitada = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Entre com seu ultimo nome, idade e altura ");
-            string[] vet = Console.ReadLine().Split(' ');
-            string vetUltimoNome = vet[0];
-            int vetIdade = int.Parse(vet[1]);
-            float vetAltura = float.Parse(vet[2]); 
+            while (password != passwordDigitada)
+            {
+                Console.WriteLine("Senha incorreta!");
+                Console.Write("Digite novamente a senha: ");
+                passwordDigitada = int.Parse(Console.ReadLine());
 
+            }
 
-
-            Console.WriteLine(nome);
-            Console.WriteLine(qtdQuartos);
-            Console.WriteLine(precoProduto.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine(vetUltimoNome);
-            Console.WriteLine(vetIdade);
-            Console.WriteLine(vetAltura);
-
-
+            Console.WriteLine("Acesso autorizado");
         }
+
     }
 }
