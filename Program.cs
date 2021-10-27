@@ -8,19 +8,46 @@ namespace Course
         static void Main(string[] args)
         {
 
-            // Estrutura for
-            Console.Write("Quantos numeros inteiros voce vai digitar? ");
-            int n = int.Parse(Console.ReadLine());
-            int soma = 0;
+            // Estrutura condicional
+            /*
+             * Exercicio 8
+             */
 
-            for (int i = 1; i <= n; i++)
+            Console.Write("Digite o salario: ");
+            double salario = double.Parse(Console.ReadLine());
+            double total;
+
+            if (salario >= 0.0 && salario <= 2000)
             {
-                Console.Write("Valor #" + i + ": ");
-                soma += int.Parse(Console.ReadLine());
+                Console.WriteLine("Insento");
+            }
+            else if (salario > 2000 && salario <= 3000)
+            {
+                // 8%
+
+                total = (salario - 2000.0) * 0.08;
+                
+
+            }
+            else if (salario > 3000 && salario <= 4500)
+            {
+                // 18%
+                total = (salario - 2000) * (18 / 100);
+                Console.WriteLine("R$ " + total);
+            }
+            else if (salario > 4500)
+            {
+                // 28%
+                total = (salario - 2000) * (28 / 100);
+                Console.WriteLine("R$ " + total);
+            }
+            else
+            {
+                Console.WriteLine("Valor digitado invalido");
             }
 
-            Console.WriteLine("Soma = " + soma);
-
+            Console.WriteLine(total);
         }
+  
     }
 }
