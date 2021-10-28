@@ -8,31 +8,48 @@ namespace Course
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Entre com seu nome completo: ");
-            string nome = Console.ReadLine();
+            // Estrutura While
+            /*
+             * Exercicio 2
+             * Escreva um programa para ler as coordenadas (X,Y) de uma quantidade indeterminada de 
+             * pontos no sistema cartesiano. Para cada ponto escrever o quadrante a que ele pertence. 
+             * O algoritmo será encerrado quando pelo menos uma de duas coordenadas 
+             * for NULA (nesta situação sem escrever mensagem alguma).
 
-            Console.WriteLine("Quantos quartos tem na sua casa? ");
-            int qtdQuartos = int.Parse(Console.ReadLine());
+             */
 
-            Console.WriteLine("Entre com o preço de um produto: ");
-            double precoProduto = double.Parse(Console.ReadLine());
+            Console.Write("Digite as coordenadas de X e Y: ");
+            string[] coordenadas = Console.ReadLine().Split(' ');
 
-            Console.WriteLine("Entre com seu ultimo nome, idade e altura ");
-            string[] vet = Console.ReadLine().Split(' ');
-            string vetUltimoNome = vet[0];
-            int vetIdade = int.Parse(vet[1]);
-            float vetAltura = float.Parse(vet[2]); 
+            int x = int.Parse(coordenadas[0]);
+            int y = int.Parse(coordenadas[1]);
 
+            while (x != 0 && y != 0)
+            {
+                if (y > 0 && x > 0)
+                {
+                    Console.WriteLine("primeiro");
 
+                }
+                else if (y > 0 && x < 0)
+                {
+                    Console.WriteLine("segundo");
+                }
+                else if (y < 0 && x < 0)
+                {
+                    Console.WriteLine("terceiro");
+                }
+                else if (y < 0 && x > 0)
+                {
+                    Console.WriteLine("quarto");
+                }
+                Console.Write("Digite as coordenadas de X e Y: ");
+                coordenadas = Console.ReadLine().Split(' ');
 
-            Console.WriteLine(nome);
-            Console.WriteLine(qtdQuartos);
-            Console.WriteLine(precoProduto.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine(vetUltimoNome);
-            Console.WriteLine(vetIdade);
-            Console.WriteLine(vetAltura);
+                x = int.Parse(coordenadas[0]);
+                y = int.Parse(coordenadas[1]);
 
-
+            }
         }
     }
 }

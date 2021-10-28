@@ -11,6 +11,7 @@
     <None Remove="Exercicios\EstruturaSequencial\" />
     <None Remove="Exercicios\EstruturaCondicional\" />
     <None Remove="Exercicios\EstruturaWhile\" />
+    <None Remove="Exercicios\EstruturaFor\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Introdução\" />
@@ -18,5 +19,6 @@
     <Folder Include="Exercicios\EstruturaSequencial\" />
     <Folder Include="Exercicios\EstruturaCondicional\" />
     <Folder Include="Exercicios\EstruturaWhile\" />
+    <Folder Include="Exercicios\EstruturaFor\" />
   </ItemGroup>
 </Project>

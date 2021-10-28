@@ -8,29 +8,41 @@ namespace Course
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Entre com seu nome completo: ");
-            string nome = Console.ReadLine();
+            // Estrutura While
+            /*
+             * Exercicio 2
+             * Um Posto de combustíveis deseja determinar qual de seus produtos tem a preferência de seus clientes. 
+             * Escreva um algoritmo para ler o tipo de combustível abastecido (codificado da seguinte forma: 
+             * 1.Álcool 2.Gasolina 3.Diesel 4.Fim). Caso o usuário informe um código inválido (fora da faixa de 1 a 4) 
+             * deve ser solicitado um novo código (até que seja válido). O programa será encerrado quando 
+             * o código informado for o número 4. Deve ser escrito a mensagem: "MUITO OBRIGADO" e a quantidade de 
+             * clientes que abasteceram cada tipo de combustível, conforme exemplo.
+             */
 
-            Console.WriteLine("Quantos quartos tem na sua casa? ");
-            int qtdQuartos = int.Parse(Console.ReadLine());
+            
+            int op = 0;
+            int alcool = 0, gasolina = 0, diesel = 0;
 
-            Console.WriteLine("Entre com o preço de um produto: ");
-            double precoProduto = double.Parse(Console.ReadLine());
+            while (op != 4)
+            {
+                Console.WriteLine("Digite a opcao: ");
+                op = int.Parse(Console.ReadLine());
+                if (op == 1)
+                {
+                    alcool++;
+                } else if (op == 2)
+                {
+                    gasolina++;
+                } else if (op == 3)
+                {
+                    diesel++;
+                }  
+            }
 
-            Console.WriteLine("Entre com seu ultimo nome, idade e altura ");
-            string[] vet = Console.ReadLine().Split(' ');
-            string vetUltimoNome = vet[0];
-            int vetIdade = int.Parse(vet[1]);
-            float vetAltura = float.Parse(vet[2]); 
-
-
-
-            Console.WriteLine(nome);
-            Console.WriteLine(qtdQuartos);
-            Console.WriteLine(precoProduto.ToString("F2", CultureInfo.InvariantCulture));
-            Console.WriteLine(vetUltimoNome);
-            Console.WriteLine(vetIdade);
-            Console.WriteLine(vetAltura);
+            Console.WriteLine("Muito Obrigado!");
+            Console.WriteLine("Alcool: " + alcool);
+            Console.WriteLine("Gasolina: " + gasolina);
+            Console.WriteLine("Diesel: " + diesel);
 
 
         }

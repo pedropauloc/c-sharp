@@ -1,0 +1,41 @@
+﻿using System;
+using System.Globalization;
+
+namespace Course
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Estrutura For
+            /*
+             * Exercicio 4
+             * Fazer um programa para ler um número N. Depois leia N pares de números e mostre a divisão 
+             * do primeiro pelo segundo. Se o denominador for igual a zero, mostrar a mensagem "divisao impossivel"..
+             */
+
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < n; i++)
+            {
+                string[] num = Console.ReadLine().Split(' ');
+                double numerador = double.Parse(num[0]);
+                double denominador = double.Parse(num[1]);
+
+                if(denominador == 0)
+                {
+                    Console.WriteLine("Divisão impossivel");
+                } else
+                {
+                    double result = numerador / denominador;
+                    Console.WriteLine(result.ToString("F1"));
+                }
+
+                
+
+            }
+
+        }
+    }
+}
